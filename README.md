@@ -18,8 +18,11 @@ Aisler link:
 https://aisler.net/p/GQFXIAWJ
 
 
-Gerber files:
+Gerber files for PCB production:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
+
+PDF files for LASER etching ( these must be made negative, and holes drilled manually ):
+https://github.com/Supermagnum/double-gain/tree/main/PDF-tracks
 
 Based on:
 http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
