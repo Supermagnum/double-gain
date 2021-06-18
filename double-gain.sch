@@ -46,7 +46,7 @@ L Device:R R2
 U 1 1 60781143
 P 5250 5200
 F 0 "R2" V 5350 5200 50  0000 C CNN
-F 1 "30K" V 5134 5200 50  0000 C CNN
+F 1 "4K" V 5134 5200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5180 5200 50  0001 C CNN
 F 3 "~" H 5250 5200 50  0001 C CNN
 	1    5250 5200
@@ -89,8 +89,6 @@ F 3 "~" H 7550 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 5400 8600 4950
-Wire Wire Line
-	8300 4600 8300 4400
 Wire Wire Line
 	8600 4100 7200 4100
 Wire Wire Line
@@ -218,8 +216,6 @@ VCC
 Wire Wire Line
 	5150 3950 5150 4100
 Connection ~ 5100 2850
-Text Notes 8850 4600 0    50   ~ 0
-+48 V phantom power
 Wire Wire Line
 	2100 5600 2100 5500
 Wire Wire Line
@@ -426,7 +422,7 @@ L Device:R R9
 U 1 1 60D282CB
 P 4400 4650
 F 0 "R9" V 4500 4650 50  0000 C CNN
-F 1 "1K" V 4284 4650 50  0000 C CNN
+F 1 "100" V 4284 4650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4330 4650 50  0001 C CNN
 F 3 "~" H 4400 4650 50  0001 C CNN
 	1    4400 4650
@@ -465,30 +461,15 @@ Wire Wire Line
 	3900 3150 3800 3150
 Connection ~ 3800 3150
 Connection ~ 8600 4950
-Wire Wire Line
-	8600 4950 8600 4700
 Text GLabel 5900 5400 1    50   Input ~ 0
 VCC
 Wire Wire Line
 	5900 5400 5900 5550
-NoConn ~ 6000 5550
 NoConn ~ 6000 6150
-NoConn ~ 6100 6150
 Text GLabel 5900 6250 3    50   Input ~ 0
 V-
 Wire Wire Line
 	5900 6250 5900 6150
-$Comp
-L Amplifier_Operational:NE5534 U2
-U 1 1 60D5461E
-P 6000 5850
-F 0 "U2" H 6344 5896 50  0000 L CNN
-F 1 "NE5534" H 6344 5805 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6050 5900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 6050 6000 50  0001 C CNN
-	1    6000 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 5750 5550 5750
 Wire Wire Line
@@ -535,39 +516,6 @@ Wire Wire Line
 	4850 4500 4950 4500
 Text Notes 2150 5150 1    50   ~ 0
 Piezo XTAL
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 60CC9F66
-P 8800 4100
-F 0 "J2" H 8692 3875 50  0000 C CNN
-F 1 "pin2" H 8692 3966 50  0000 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
-F 3 "~" H 8800 4100 50  0001 C CNN
-	1    8800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 60CCD14D
-P 8500 4400
-F 0 "J4" H 8392 4175 50  0000 C CNN
-F 1 "pin3" H 8392 4266 50  0000 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8500 4400 50  0001 C CNN
-F 3 "~" H 8500 4400 50  0001 C CNN
-	1    8500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 60CCE1F6
-P 8800 4700
-F 0 "J5" H 8692 4475 50  0000 C CNN
-F 1 "pin1" H 8692 4566 50  0000 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8800 4700 50  0001 C CNN
-F 3 "~" H 8800 4700 50  0001 C CNN
-	1    8800 4700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 60CD9D2B
@@ -621,7 +569,7 @@ Wire Wire Line
 	1950 7200 1950 7450
 Connection ~ 1950 7200
 Text Notes 4550 5900 0    50   ~ 0
-R2 Gain values in dB:\n20K=26\n30K = 29\n40K=32\n50K=34\n60K=35
+R2 Gain values in dB:\n1K=26\n3K=29\n4K=32\n5K=34\n6K=35\n7K=37
 $Comp
 L power:Earth #PWR0101
 U 1 1 60D17B0A
@@ -635,4 +583,73 @@ F 3 "~" H 1700 6950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 6950 1700 6950
+$Comp
+L Amplifier_Operational:NE5534 U2
+U 1 1 60D5461E
+P 6000 5850
+F 0 "U2" H 6344 5896 50  0000 L CNN
+F 1 "NE5534" H 6344 5805 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6050 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 6050 6000 50  0001 C CNN
+	1    6000 5850
+	1    0    0    -1  
+$EndComp
+Text Notes 8850 4600 0    50   ~ 0
++48 V phantom power
+Wire Wire Line
+	8600 4950 8600 4700
+Wire Wire Line
+	8300 4600 8300 4400
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 60CC9F66
+P 8800 4100
+F 0 "J2" H 8692 3875 50  0000 C CNN
+F 1 "pin2" H 8692 3966 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
+F 3 "~" H 8800 4100 50  0001 C CNN
+	1    8800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 60CCD14D
+P 8500 4400
+F 0 "J4" H 8392 4175 50  0000 C CNN
+F 1 "pin3" H 8392 4266 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8500 4400 50  0001 C CNN
+F 3 "~" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 60CCE1F6
+P 8800 4700
+F 0 "J5" H 8692 4475 50  0000 C CNN
+F 1 "pin1" H 8692 4566 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8800 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60CF01F8
+P 6900 5850
+F 0 "C9" H 7015 5896 50  0000 L CNN
+F 1 "22pF" H 7015 5805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6938 5700 50  0001 C CNN
+F 3 "~" H 6900 5850 50  0001 C CNN
+	1    6900 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5700 6900 5550
+Wire Wire Line
+	6900 5550 6000 5550
+Wire Wire Line
+	6100 6150 6900 6150
+Wire Wire Line
+	6900 6150 6900 6000
 $EndSCHEMATC
