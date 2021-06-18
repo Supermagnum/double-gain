@@ -21,6 +21,9 @@ https://aisler.net/p/GQFXIAWJ
 Gerber files:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
 
+Based on:
+http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
+
 
 
 
