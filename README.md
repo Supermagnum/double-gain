@@ -14,6 +14,14 @@ Reverse side:
 https://github.com/Supermagnum/double-gain/blob/main/back-side.jpg
 
 
+Aisler link:
+https://aisler.net/p/GQFXIAWJ
+
+
+Gerber files:
+https://github.com/Supermagnum/double-gain/tree/main/gerbers
+
+
 
 
 
