@@ -14,7 +14,7 @@ Reverse side:
 https://github.com/Supermagnum/double-gain/blob/main/back-side.jpg
 
 
-Aisler link:
+Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
 
 
