@@ -6,7 +6,7 @@ Please use metal film resistors with 1% tolerance or better and audio quality ca
 Schematic diagram:
 https://github.com/Supermagnum/double-gain/blob/main/double-gain.pdf
 
-Component side picture:
+Component side picture with resistor values versus dB gain:
 https://github.com/Supermagnum/double-gain/blob/main/components-side.jpg
 
 
