@@ -9,14 +9,14 @@ https://github.com/Supermagnum/double-gain/blob/main/double-gain.pdf
 Component side picture with resistor values versus dB gain:
 https://github.com/Supermagnum/double-gain/blob/main/components-side.jpg
 
-
 Reverse side:
 https://github.com/Supermagnum/double-gain/blob/main/back-side.jpg
 
+PCB board dimensions:
+https://github.com/Supermagnum/double-gain/blob/main/dimentions.png
 
 Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
-
 
 Gerber files for PCB production:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
