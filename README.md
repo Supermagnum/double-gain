@@ -2,7 +2,7 @@ A small PCB that uses two NE5534 op amps to amplify a signal from a contact micr
 It has balanced output,input and should run on +48 phantom power.
 Shielded cable must be used for connection to the piezo crystals.
 Please use metal film resistors with 1% tolerance or better and audio quality capacitors.
-C0G (NP0) capacitors is very good.
+C0G (NP0) or X7R capacitors is very good.
 
 Schematic diagram:
 https://github.com/Supermagnum/double-gain/blob/main/double-gain.pdf
@@ -18,6 +18,7 @@ https://github.com/Supermagnum/double-gain/blob/main/dimentions.png
 
 Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
+They have all the parts too, it's included with the link 
 
 Gerber files for PCB production:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
@@ -36,6 +37,7 @@ https://github.com/Supermagnum/double-gain/blob/main/Frequency-response.png
 Based on:
 http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
 
+It works nicely in LTspice, a program for simulation of circuits.
 
 Why: The problem with piezo guitar pickups and piezoelectric crystals is that they are not well matched to typical audio inputs. By their nature they can generate a lot of signal, but they cannot drive a 50 kilohm typical line input. The pickup needs to work into a much higher impedance, typically 1 megohm or so.
 
