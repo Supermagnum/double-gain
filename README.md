@@ -42,7 +42,7 @@ So what to people do? They go and plug a piezoelectric disks output directly int
 
 The reason why these devices often sound tinny is because the piezo sensor presents its signal through a series capacitance which is small, typically 15nF or less. When wired to a normal 50 kilohm line input this forms a high-pass filter, which eliminates the bass.
 
-This circuit board solves that, and amplifies the signal around 15~30 dB. How many dB it amplifies is dependent on the impedance on the recording equipment. I am getting 20 dB with 10K ohm impedance of the recorder ( simulated ). You get more with higher impedance.
+This circuit board solves that, and amplifies the signal. How many dB it amplifies is dependent on the impedance on the resistors used.The data for that is on the schematic diagram.
 
 It's fairly easy and straight forward to solder the components to the circuit board, a nice pointy soldering iron, solder, a magnifying glass, and a ohm or multimeter is all that is needed. Of course one needs a suitable metal box, and the circuit boards components must not come in contact with the metal box. That will cause short circuit, so it's best mounted on stand offs. Also, use the magnifying glass to check that no one of the soldering pads has been bridged.
 
