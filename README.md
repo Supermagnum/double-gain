@@ -24,6 +24,14 @@ https://github.com/Supermagnum/double-gain/tree/main/gerbers
 PDF files for LASER etching ( these must be made negative, and holes drilled manually ):
 https://github.com/Supermagnum/double-gain/tree/main/PDF-tracks
 
+Ltspice simulation setup:
+https://github.com/Supermagnum/double-gain/blob/main/Ltspice-setup.png
+
+Ltspice frequency response:
+https://github.com/Supermagnum/double-gain/blob/main/Frequency-response.png
+
+
+
 Based on:
 http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
 
