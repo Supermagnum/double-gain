@@ -776,10 +776,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 5500 2100 5500
 $Comp
-L Connector:XLR3 J?
+L Connector:XLR3 J2
 U 1 1 60DA9297
 P 8600 4400
-F 0 "J?" V 8554 4628 50  0000 L CNN
+F 0 "J2" V 8554 4628 50  0000 L CNN
 F 1 "XLR3" V 8645 4628 50  0000 L CNN
 F 2 "" H 8600 4400 50  0001 C CNN
 F 3 " ~" H 8600 4400 50  0001 C CNN
@@ -787,5 +787,5 @@ F 3 " ~" H 8600 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 4300 6200 0    50   ~ 0
-R2 and R14 Gain values in dB:\n1K=26\n3K=29\n4K=32\n5K=34\n6K=35\n7K=37\n8K=38\n9K=39
+R2 and R13 Gain values in dB:\n1K=26\n3K=29\n4K=32\n5K=34\n6K=35\n7K=37\n8K=38\n9K=39
 $EndSCHEMATC
