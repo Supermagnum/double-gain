@@ -775,17 +775,45 @@ Wire Wire Line
 	5250 6700 5250 6900
 Wire Wire Line
 	1250 5500 2100 5500
-$Comp
-L Connector:XLR3 J2
-U 1 1 60DA9297
-P 8600 4400
-F 0 "J2" V 8554 4628 50  0000 L CNN
-F 1 "XLR3" V 8645 4628 50  0000 L CNN
-F 2 "" H 8600 4400 50  0001 C CNN
-F 3 " ~" H 8600 4400 50  0001 C CNN
-	1    8600 4400
-	0    1    1    0   
-$EndComp
 Text Notes 4300 6200 0    50   ~ 0
 R2 and R13 Gain values in dB:\n1K=26\n3K=29\n4K=32\n5K=34\n6K=35\n7K=37\n8K=38\n9K=39
+Text Label 8250 4100 0    50   ~ 0
+2
+Text Label 8000 4600 0    50   ~ 0
+3
+Text Label 8600 4800 0    50   ~ 0
+1
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 60D2F0A9
+P 8800 4700
+F 0 "J5" H 8828 4726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4635 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 60D2F689
+P 8500 4400
+F 0 "J4" H 8528 4426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8528 4335 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8500 4400 50  0001 C CNN
+F 3 "~" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 60D2FAE3
+P 8800 4100
+F 0 "J2" H 8828 4126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4035 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
+F 3 "~" H 8800 4100 50  0001 C CNN
+	1    8800 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
