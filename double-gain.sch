@@ -218,8 +218,6 @@ Wire Wire Line
 Connection ~ 5100 2850
 Wire Wire Line
 	2100 5600 2100 5500
-Wire Wire Line
-	2100 4200 2100 4500
 $Comp
 L power:GND #PWR04
 U 1 1 60D31041
@@ -252,17 +250,6 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 2100 4700 50  0001 C CNN
 F 3 "~" H 2100 4700 50  0001 C CNN
 	1    2100 4700
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 60D15708
-P 2100 4050
-F 0 "C5" V 1848 4050 50  0000 C CNN
-F 1 "10uF" V 1939 4050 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2138 3900 50  0001 C CNN
-F 3 "~" H 2100 4050 50  0001 C CNN
-	1    2100 4050
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D D2
@@ -407,8 +394,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 4700 3800 4700
 Connection ~ 2100 3850
-Wire Wire Line
-	2100 3850 2100 3900
 Connection ~ 3800 4700
 Wire Wire Line
 	4200 4300 4200 4700
@@ -591,8 +576,6 @@ Wire Wire Line
 	8300 4600 8300 4400
 Wire Wire Line
 	1250 5600 1250 5500
-Wire Wire Line
-	1250 4200 1250 4500
 $Comp
 L power:GND #PWR03
 U 1 1 60CF6018
@@ -625,17 +608,6 @@ F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1250 4700 50  0001 C CNN
 F 3 "~" H 1250 4700 50  0001 C CNN
 	1    1250 4700
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 60CF6036
-P 1250 4050
-F 0 "C9" V 998 4050 50  0000 C CNN
-F 1 "10uF" V 1089 4050 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 1288 3900 50  0001 C CNN
-F 3 "~" H 1250 4050 50  0001 C CNN
-	1    1250 4050
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R11
@@ -716,8 +688,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 3850 1250 3850
 Connection ~ 1250 3850
-Wire Wire Line
-	1250 3850 1250 3900
 Text GLabel 3300 4150 0    50   Input ~ 0
 ind
 Wire Wire Line
@@ -783,20 +753,24 @@ Text Label 8000 4600 0    50   ~ 0
 3
 Text Label 8600 4800 0    50   ~ 0
 1
+Wire Wire Line
+	2100 3850 2100 4500
+Wire Wire Line
+	1250 3850 1250 4500
 $Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 60D2F0A9
-P 8800 4700
-F 0 "J5" H 8828 4726 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8828 4635 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4700 50  0001 C CNN
-F 3 "~" H 8800 4700 50  0001 C CNN
-	1    8800 4700
+L Connector:Conn_01x01_Female J2
+U 1 1 60D77A7A
+P 8800 4100
+F 0 "J2" H 8828 4126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4035 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
+F 3 "~" H 8800 4100 50  0001 C CNN
+	1    8800 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J4
-U 1 1 60D2F689
+U 1 1 60D77DA5
 P 8500 4400
 F 0 "J4" H 8528 4426 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 8528 4335 50  0000 L CNN
@@ -806,14 +780,14 @@ F 3 "~" H 8500 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 60D2FAE3
-P 8800 4100
-F 0 "J2" H 8828 4126 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8828 4035 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
-F 3 "~" H 8800 4100 50  0001 C CNN
-	1    8800 4100
+L Connector:Conn_01x01_Female J5
+U 1 1 60D7837B
+P 8800 4700
+F 0 "J5" H 8828 4726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4635 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
