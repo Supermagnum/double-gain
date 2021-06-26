@@ -18,7 +18,8 @@ https://github.com/Supermagnum/double-gain/blob/main/dimentions.png
 
 Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
-They have all the parts too, it's included with the link 
+They have all the parts too, it's included with the link.
+Note: install jumpers across C5 and C9 as these condesators is not needed.
 
 Gerber files for PCB production:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
