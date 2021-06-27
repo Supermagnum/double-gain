@@ -3,6 +3,9 @@ It has balanced output,input and should run on +48 phantom power.
 Shielded cable must be used for connection to the piezo crystals.
 Please use metal film resistors with 1% tolerance or better and audio quality capacitors.
 C0G (NP0) or X7R capacitors is very good.
+It is important that the circuit board is mounted inside a metal box, and Ø2mm conducting metal standoffs are used.
+The corner pads of the PCB board is reserved for that.
+
 
 Schematic diagram:
 https://github.com/Supermagnum/double-gain/blob/main/double-gain.pdf
