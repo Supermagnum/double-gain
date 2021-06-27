@@ -34,6 +34,10 @@ Ltspice frequency response:
 https://github.com/Supermagnum/double-gain/blob/main/Frequency-response.png
 
 
++48 volt phantom power supply with mono headphone jack, runs on 9V battery:
+https://github.com/Supermagnum/48power
+
+
 
 Based on:
 http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
