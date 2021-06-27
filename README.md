@@ -39,6 +39,13 @@ https://github.com/Supermagnum/double-gain/blob/main/Frequency-response.png
 
 +48 volt phantom power supply with mono headphone jack, runs on 9V battery:
 https://github.com/Supermagnum/48power
+It's only needed if you don't have a recorder that can provide 48 volts phantom power.
+https://en.m.wikipedia.org/wiki/Phantom_power
+
+They usually have a 3 pin XLR plug. Those are wired up like this: https://github.com/Supermagnum/piezo-balanced/blob/main/XLR%2BConnector%2BPinout%2BDiagram%2BRear%2BPin%2B2%2BHot%2Bv2%2Bgreen__01.jpg
+
+NOTE: DO NOT CONNECT THE GROUND PIN TO THE CABLE SHIELD! 
+IT WILL PICK UP NOISE!
 
 
 
