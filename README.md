@@ -70,6 +70,8 @@ In case of a hydrophone it's possible to have the hydrophone attached with a lon
 For hydrophone usage: The two piezoelectric tubes elements needs to be encapsulated in Ecopoxy Flowcast epoxy, with as little thickness to the outside of the piezoelectric tubes as possible. A streamlined bulb should be nice for that. The more streamlined, the less water flow noise. Some interesting ideas can be found in: https://github.com/Supermagnum/piezo-balanced/blob/main/Barlow-et-al-2008-HydrophoneConstruction_TM-417.pdf Note: Ecopoxy Flowcast does not need any vacuum, just a mold and a way to hold the piezoelectric tubes centered. It's also safer to work with. Of course two piezoelectric disks inside something waterproof that can handle the water pressure is also useable.
 Some methods of mounting a piezoelectric disk can be found here: https://locusonus.org/wiki/index.php?page=Hydrophone.en
 
+Around 40 dB gain should be nice for hydrophone usage.
+
 Made with: http://www.kicad.org/
 
 KiCad uses an integrated environment for all of the stages of the design process: Schematic capture, PCB layout, Gerber file generation/visualization, and library editing.
