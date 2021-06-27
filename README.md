@@ -5,6 +5,7 @@ Please use metal film resistors with 1% tolerance or better and audio quality ca
 C0G (NP0) or X7R capacitors is very good.
 It is important that the circuit board is mounted inside a metal box, and Ø2mm conducting metal standoffs are used.
 The corner pads of the PCB board is reserved for that.
+Of course the PCB board and components must not come in contact with any flat metal surface expect the standoffs.
 
 
 Schematic diagram:
@@ -70,7 +71,9 @@ Mechanics may even use it to discover trouble with bearings or other mechanisms 
 
 Of course one can use a recorder like a tascam dr40x, as long as it can supply +48 volt phantom power, and has a headphone jack for monitoring.
 
-They usually have a 3 pin XLR plug. Those are wired up like this: https://github.com/Supermagnum/piezo-balanced/blob/main/XLR%2BConnector%2BPinout%2BDiagram%2BRear%2BPin%2B2%2BHot%2Bv2%2Bgreen__01.jpg NOTE: DO NOT CONNECT THE GROUND PIN TO THE CABLE SHIELD! IT WILL PICK UP NOISE!
+They usually have a 3 pin XLR plug. Those are wired up like this: https://github.com/Supermagnum/piezo-balanced/blob/main/XLR%2BConnector%2BPinout%2BDiagram%2BRear%2BPin%2B2%2BHot%2Bv2%2Bgreen__01.jpg
+
+NOTE: DO NOT CONNECT THE GROUND PIN TO THE CABLE SHIELD! IT WILL PICK UP NOISE!
 
 A good set of headphones or ear protection with built in speakers will keep out unwanted sounds or noise.
 
