@@ -753,6 +753,10 @@ Text Label 8000 4600 0    50   ~ 0
 3
 Text Label 8600 4800 0    50   ~ 0
 1
+Wire Wire Line
+	2100 3850 2100 4500
+Wire Wire Line
+	1250 3850 1250 4500
 $Comp
 L Connector:XLR3 J2
 U 1 1 60DA9297
@@ -764,8 +768,4 @@ F 3 " ~" H 8600 4400 50  0001 C CNN
 	1    8600 4400
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2100 3850 2100 4500
-Wire Wire Line
-	1250 3850 1250 4500
 $EndSCHEMATC
