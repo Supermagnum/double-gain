@@ -20,6 +20,9 @@ https://github.com/Supermagnum/double-gain/blob/main/back-side.jpg
 PCB board dimensions:
 https://github.com/Supermagnum/double-gain/blob/main/dimentions.png
 
+Piezoelectric disk, red wire for positive polarity.
+Black for negative: https://github.com/Supermagnum/double-gain/blob/main/Piezo-element-6.jpg
+
 Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
 They have all the parts too, it's included with the link.
