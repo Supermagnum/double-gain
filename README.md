@@ -28,7 +28,7 @@ Black for negative: https://github.com/Supermagnum/double-gain/blob/main/Piezo-e
 Aisler PCB boards:
 https://aisler.net/p/GQFXIAWJ
 They have all the parts too, it's included with the link.
-Note: install jumpers across C5 and C9 as these capacitors is not needed.
+
 
 Gerber files for PCB production:
 https://github.com/Supermagnum/double-gain/tree/main/gerbers
