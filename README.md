@@ -50,9 +50,9 @@ https://en.m.wikipedia.org/wiki/Phantom_power
 
 They usually have a 3 pin XLR plug. Those are wired up like this: https://github.com/Supermagnum/piezo-balanced/blob/main/XLR%2BConnector%2BPinout%2BDiagram%2BRear%2BPin%2B2%2BHot%2Bv2%2Bgreen__01.jpg
 
-NOTE: DO NOT CONNECT THE GROUND PIN TO THE CABLE SHIELD! 
-IT WILL PICK UP NOISE!
-
+NOTE:  
+The XLR 3 pin plug has a solder lug for the shield for a reason.
+It is my opinion that a shielded cable with 3 conductors inside is the best.
 
 
 Based on:
@@ -75,10 +75,6 @@ It can be used for a reverb plate, listening to the insides of a engine,recordin
 Mechanics may even use it to discover trouble with bearings or other mechanisms not easily opened, but it will need a dedicated +48 volts phantom power supply with headphone jack for that specific usage.
 
 Of course one can use a recorder like a tascam dr40x, as long as it can supply +48 volt phantom power, and has a headphone jack for monitoring.
-
-They usually have a 3 pin XLR plug. Those are wired up like this: https://github.com/Supermagnum/piezo-balanced/blob/main/XLR%2BConnector%2BPinout%2BDiagram%2BRear%2BPin%2B2%2BHot%2Bv2%2Bgreen__01.jpg
-
-NOTE: DO NOT CONNECT THE GROUND PIN TO THE CABLE SHIELD! IT WILL PICK UP NOISE!
 
 A good set of headphones or ear protection with built in speakers will keep out unwanted sounds or noise.
 
