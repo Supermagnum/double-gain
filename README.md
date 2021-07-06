@@ -94,4 +94,5 @@ KiCad uses an integrated environment for all of the stages of the design process
 KiCad is a cross-platform program, and of curse free!
 
 
+Built and works.
 
