@@ -109,7 +109,7 @@ L Device:D_Zener D1
 U 1 1 60CCADCC
 P 6750 3600
 F 0 "D1" V 6704 3680 50  0000 L CNN
-F 1 "1N4746A (18V)" V 6795 3680 50  0000 L CNN
+F 1 "HZ11B3-E" V 6795 3680 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6750 3600 50  0001 C CNN
 F 3 "~" H 6750 3600 50  0001 C CNN
 	1    6750 3600
@@ -211,10 +211,10 @@ Connection ~ 5600 3150
 Connection ~ 6000 3150
 Text GLabel 5100 2800 1    50   Input ~ 0
 VCC
-Text GLabel 5150 3950 1    50   Input ~ 0
+Text GLabel 4450 3150 1    50   Input ~ 0
 VCC
 Wire Wire Line
-	5150 3950 5150 4100
+	4450 3150 4450 3300
 Connection ~ 5100 2850
 Wire Wire Line
 	2100 5600 2100 5500
@@ -251,13 +251,10 @@ F 3 "~" H 3800 4550 50  0001 C CNN
 	1    3800 4550
 	0    1    1    0   
 $EndComp
-NoConn ~ 5250 4100
-NoConn ~ 5250 4700
-NoConn ~ 5350 4700
-Text GLabel 5150 4800 3    50   Input ~ 0
+Text GLabel 4450 4000 3    50   Input ~ 0
 V-
 Wire Wire Line
-	5150 4800 5150 4700
+	4450 4000 4450 3900
 $Comp
 L Device:R R7
 U 1 1 60CDC00E
@@ -287,24 +284,13 @@ Wire Wire Line
 Wire Wire Line
 	3800 5150 3800 5400
 Connection ~ 7550 4600
-$Comp
-L Amplifier_Operational:NE5534 U1
-U 1 1 60CCF692
-P 5250 4400
-F 0 "U1" H 5594 4446 50  0000 L CNN
-F 1 "NE5534" H 5594 4355 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5300 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 5300 4550 50  0001 C CNN
-	1    5250 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 4600 7550 4600
 $Comp
-L Device:C C7
+L Device:C C5
 U 1 1 6077AA47
 P 7250 4600
-F 0 "C7" V 6998 4600 50  0000 C CNN
+F 0 "C5" V 6998 4600 50  0000 C CNN
 F 1 "10uF" V 7089 4600 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7288 4450 50  0001 C CNN
 F 3 "~" H 7250 4600 50  0001 C CNN
@@ -347,10 +333,10 @@ F 3 "~" H 2800 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C7
 U 1 1 60D10218
 P 3050 5200
-F 0 "C8" H 3165 5246 50  0000 L CNN
+F 0 "C7" H 3165 5246 50  0000 L CNN
 F 1 "10uF" H 3165 5155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3088 5050 50  0001 C CNN
 F 3 "~" H 3050 5200 50  0001 C CNN
@@ -388,7 +374,6 @@ Wire Wire Line
 	4200 4700 3800 4700
 Wire Wire Line
 	5550 4400 5950 4400
-Connection ~ 5550 4400
 $Comp
 L Device:R R9
 U 1 1 60D282CB
@@ -429,17 +414,8 @@ Wire Wire Line
 	3900 3150 3800 3150
 Connection ~ 3800 3150
 Connection ~ 8600 4950
-Text GLabel 5900 5400 1    50   Input ~ 0
-VCC
 Wire Wire Line
-	5900 5400 5900 5550
-NoConn ~ 6000 6150
-Text GLabel 5900 6250 3    50   Input ~ 0
-V-
-Wire Wire Line
-	5900 6250 5900 6150
-Wire Wire Line
-	5700 5950 5700 6600
+	5700 5950 5700 6100
 Wire Wire Line
 	5700 6600 5800 6600
 Wire Wire Line
@@ -447,12 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 6100 6300 6100
 Wire Wire Line
-	6300 6100 6300 5850
-Wire Wire Line
 	6750 4600 6300 4600
-Wire Wire Line
-	6300 4600 6300 5850
-Connection ~ 6300 5850
 Connection ~ 3800 5400
 Wire Wire Line
 	4400 5400 3800 5400
@@ -465,7 +436,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2850 5100 2850
 Wire Wire Line
-	5550 4400 5550 5200
+	5550 4400 5550 4700
 Wire Wire Line
 	5400 5200 5550 5200
 Wire Wire Line
@@ -473,21 +444,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 5200 4850 5200
 Wire Wire Line
-	4850 5200 4850 4500
+	4850 5200 4850 4700
 Connection ~ 4850 4500
 Wire Wire Line
 	4850 4500 4950 4500
-$Comp
-L Amplifier_Operational:NE5534 U2
-U 1 1 60D5461E
-P 6000 5850
-F 0 "U2" H 6344 5896 50  0000 L CNN
-F 1 "NE5534" H 6344 5805 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6050 5900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 6050 6000 50  0001 C CNN
-	1    6000 5850
-	1    0    0    -1  
-$EndComp
 Text Notes 8850 4600 0    50   ~ 0
 +48 V phantom power
 Wire Wire Line
@@ -548,8 +508,6 @@ Wire Wire Line
 Connection ~ 2100 3450
 Wire Wire Line
 	2100 3450 3000 3450
-NoConn ~ 6000 5550
-NoConn ~ 6100 6150
 $Comp
 L Device:R R13
 U 1 1 60D097DC
@@ -633,10 +591,10 @@ F 3 "~" H 5250 6100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C10
+L Device:C C8
 U 1 1 60D5D1D3
 P 5250 6550
-F 0 "C10" V 4998 6550 50  0000 C CNN
+F 0 "C8" V 4998 6550 50  0000 C CNN
 F 1 "47uF" V 5089 6550 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5288 6400 50  0001 C CNN
 F 3 "~" H 5250 6550 50  0001 C CNN
@@ -647,7 +605,6 @@ Wire Wire Line
 	5250 6400 5250 6250
 Wire Wire Line
 	5250 5950 5700 5950
-Connection ~ 5700 5950
 $Comp
 L power:GND #PWR05
 U 1 1 60D6632B
@@ -777,4 +734,86 @@ F 3 "~" H 8800 4700 50  0001 C CNN
 	1    8800 4700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6300 4600 6300 5850
+$Comp
+L Amplifier_Operational:TL082 U1
+U 1 1 60F4CDB0
+P 5250 4400
+F 0 "U1" H 5250 4767 50  0000 C CNN
+F 1 "TL082" H 5250 4676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5250 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5250 4400 50  0001 C CNN
+	1    5250 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 4400
+$Comp
+L Amplifier_Operational:TL082 U1
+U 2 1 60F50D3A
+P 6000 5850
+F 0 "U1" H 6000 6217 50  0000 C CNN
+F 1 "TL082" H 6000 6126 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6000 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6000 5850 50  0001 C CNN
+	2    6000 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 5850
+Wire Wire Line
+	6300 5850 6300 6100
+Connection ~ 5700 5950
+$Comp
+L Amplifier_Operational:TL082 U1
+U 3 1 60F566DA
+P 4550 3600
+F 0 "U1" H 4508 3646 50  0000 L CNN
+F 1 "TL082" H 4508 3555 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4550 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4550 3600 50  0001 C CNN
+	3    4550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60F6F65F
+P 5200 4700
+F 0 "C9" V 4948 4700 50  0000 C CNN
+F 1 "47uF" V 5039 4700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5238 4550 50  0001 C CNN
+F 3 "~" H 5200 4700 50  0001 C CNN
+	1    5200 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60F7078F
+P 5950 6100
+F 0 "C10" V 5698 6100 50  0000 C CNN
+F 1 "47uF" V 5789 6100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5988 5950 50  0001 C CNN
+F 3 "~" H 5950 6100 50  0001 C CNN
+	1    5950 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 6100 6250 6100
+Connection ~ 6250 6100
+Wire Wire Line
+	5800 6100 5700 6100
+Connection ~ 5700 6100
+Wire Wire Line
+	5700 6100 5700 6600
+Wire Wire Line
+	5350 4700 5550 4700
+Connection ~ 5550 4700
+Wire Wire Line
+	5550 4700 5550 5200
+Wire Wire Line
+	5050 4700 4850 4700
+Connection ~ 4850 4700
+Wire Wire Line
+	4850 4700 4850 4500
+Text Notes 6150 3700 0    50   ~ 0
+ZENER 11V \n500MW DO35
 $EndSCHEMATC
