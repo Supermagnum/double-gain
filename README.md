@@ -1,4 +1,4 @@
-A small PCB that uses two NE5534 op amps to amplify a signal from a contact microphone.
+A small PCB that uses two TL082BCP op amps to amplify a signal from a contact microphone.
 
 It has balanced output,input and should run on +48 phantom power.
 Shielded cable must be used for connection to the piezo crystals.
@@ -55,10 +55,6 @@ NOTE:
 The XLR 3 pin plug has a solder lug for the shield for a reason.
 It is my opinion that a shielded cable with 3 conductors inside is the best.
 Suggested cable: Digi-Key Part Number: 30-00910-5-ND
-
-The Opamps used pulls 8mA per chip, be sure that your equipment can handle that,
-or issues might arise.
-	
 
 Based on:
 http://www.richardmudhar.com/blog/piezo-contact-microphone-hi-z-amplifier-low-noise-version/
