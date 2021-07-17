@@ -55,6 +55,9 @@ NOTE:
 The XLR 3 pin plug has a solder lug for the shield for a reason.
 It is my opinion that a shielded cable with 3 conductors inside is the best.
 Suggested cable: Digi-Key Part Number: 30-00910-5-ND
+
+The Opamps used pulls 8mA per chip, be sure that your equipment can handle that,
+or issues might arise.
 	
 
 Based on:
