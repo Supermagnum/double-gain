@@ -101,7 +101,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 4050 7550 4600
 Wire Wire Line
-	7550 4600 8300 4600
+	7550 4600 7900 4600
 Wire Wire Line
 	7200 3750 7550 3750
 $Comp
@@ -228,17 +228,6 @@ F 2 "" H 2100 5600 50  0001 C CNN
 F 3 "" H 2100 5600 50  0001 C CNN
 	1    2100 5600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J1
-U 1 1 60D2F44A
-P 2100 4700
-F 0 "J1" H 1992 4475 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 1992 4566 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 2100 4700 50  0001 C CNN
-F 3 "~" H 2100 4700 50  0001 C CNN
-	1    2100 4700
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:D D2
@@ -452,43 +441,6 @@ Text Notes 8850 4600 0    50   ~ 0
 +48 V phantom power
 Wire Wire Line
 	8600 4950 8600 4700
-Wire Wire Line
-	8300 4600 8300 4400
-Wire Wire Line
-	1250 5600 1250 5500
-$Comp
-L power:GND #PWR03
-U 1 1 60CF6018
-P 1250 5600
-F 0 "#PWR03" H 1250 5350 50  0001 C CNN
-F 1 "GND" H 1255 5427 50  0000 C CNN
-F 2 "" H 1250 5600 50  0001 C CNN
-F 3 "" H 1250 5600 50  0001 C CNN
-	1    1250 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J11
-U 1 1 60CF6022
-P 1250 5200
-F 0 "J11" H 1142 5067 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 1142 5066 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1250 5200 50  0001 C CNN
-F 3 "~" H 1250 5200 50  0001 C CNN
-	1    1250 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J10
-U 1 1 60CF602C
-P 1250 4700
-F 0 "J10" H 1142 4475 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 1142 4566 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1250 4700 50  0001 C CNN
-F 3 "~" H 1250 4700 50  0001 C CNN
-	1    1250 4700
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R11
 U 1 1 60CF6040
@@ -500,9 +452,6 @@ F 3 "~" H 1250 3600 50  0001 C CNN
 	1    1250 3600
 	1    0    0    -1  
 $EndComp
-Connection ~ 1250 5500
-Wire Wire Line
-	1250 5500 1250 5400
 Wire Wire Line
 	1250 3450 2100 3450
 Connection ~ 2100 3450
@@ -618,24 +567,18 @@ F 3 "" H 5250 6900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 6700 5250 6900
-Wire Wire Line
-	1250 5500 2100 5500
 Text Notes 4300 6200 0    50   ~ 0
 R2 and R13 Gain values in dB:\n1K=26\n3K=29\n4K=32\n5K=34\n6K=35\n7K=37\n8K=38\n9K=39
 Text Label 8250 4100 0    50   ~ 0
 2
-Text Label 8000 4600 0    50   ~ 0
+Text Label 7700 4600 0    50   ~ 0
 3
 Text Label 8600 4800 0    50   ~ 0
 1
 Wire Wire Line
-	2100 3850 2100 4500
+	2100 3850 2100 4350
 Wire Wire Line
-	1250 3850 1250 4500
-Text Notes 2150 5200 1    50   ~ 0
-+ Piezo XTAL
-Text Notes 1300 5200 1    50   ~ 0
-Piezo XTAL +
+	1250 3850 1250 4050
 Wire Wire Line
 	1300 6550 1050 6550
 $Comp
@@ -701,39 +644,6 @@ F 3 "~" H 1500 6300 50  0001 C CNN
 	1    1500 6300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 60F4FEF2
-P 8800 4100
-F 0 "J2" H 8692 3875 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 8692 3966 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
-F 3 "~" H 8800 4100 50  0001 C CNN
-	1    8800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 60F520D0
-P 8500 4400
-F 0 "J3" H 8392 4175 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 8392 4266 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8500 4400 50  0001 C CNN
-F 3 "~" H 8500 4400 50  0001 C CNN
-	1    8500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 60F525DE
-P 8800 4700
-F 0 "J4" H 8692 4475 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 8692 4566 50  0001 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4700 50  0001 C CNN
-F 3 "~" H 8800 4700 50  0001 C CNN
-	1    8800 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 4600 6300 5850
 $Comp
@@ -741,7 +651,7 @@ L Amplifier_Operational:TL082 U1
 U 1 1 60F4CDB0
 P 5250 4400
 F 0 "U1" H 5250 4767 50  0000 C CNN
-F 1 "TL082" H 5250 4676 50  0000 C CNN
+F 1 "TL082BCP" H 5250 4676 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 5250 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5250 4400 50  0001 C CNN
 	1    5250 4400
@@ -753,7 +663,7 @@ L Amplifier_Operational:TL082 U1
 U 2 1 60F50D3A
 P 6000 5850
 F 0 "U1" H 6000 6217 50  0000 C CNN
-F 1 "TL082" H 6000 6126 50  0000 C CNN
+F 1 "TL082BCP" H 6000 6126 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 6000 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6000 5850 50  0001 C CNN
 	2    6000 5850
@@ -768,7 +678,7 @@ L Amplifier_Operational:TL082 U1
 U 3 1 60F566DA
 P 4550 3600
 F 0 "U1" H 4508 3646 50  0000 L CNN
-F 1 "TL082" H 4508 3555 50  0000 L CNN
+F 1 "TL082BCP" H 4508 3555 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 4550 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4550 3600 50  0001 C CNN
 	3    4550 3600
@@ -779,7 +689,7 @@ L Device:C C9
 U 1 1 60F6F65F
 P 5200 4700
 F 0 "C9" V 4948 4700 50  0000 C CNN
-F 1 "47uF" V 5039 4700 50  0000 C CNN
+F 1 "47pF" V 5039 4700 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5238 4550 50  0001 C CNN
 F 3 "~" H 5200 4700 50  0001 C CNN
 	1    5200 4700
@@ -790,7 +700,7 @@ L Device:C C10
 U 1 1 60F7078F
 P 5950 6100
 F 0 "C10" V 5698 6100 50  0000 C CNN
-F 1 "47uF" V 5789 6100 50  0000 C CNN
+F 1 "47pF" V 5789 6100 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5988 5950 50  0001 C CNN
 F 3 "~" H 5950 6100 50  0001 C CNN
 	1    5950 6100
@@ -816,4 +726,96 @@ Wire Wire Line
 	4850 4700 4850 4500
 Text Notes 6150 3700 0    50   ~ 0
 ZENER 11V \n500MW DO35
+Wire Wire Line
+	1650 4650 1650 5500
+Wire Wire Line
+	1650 5500 2100 5500
+Wire Wire Line
+	8300 4400 7900 4400
+Wire Wire Line
+	7900 4400 7900 4600
+Wire Notes Line
+	4900 2500 600  2500
+Wire Notes Line
+	600  2500 600  7550
+Wire Notes Line
+	600  7550 6650 7550
+Wire Notes Line
+	6650 7550 6650 6100
+Wire Notes Line
+	9950 2450 4900 2450
+Wire Notes Line
+	4900 2450 4900 2500
+Wire Notes Line
+	6650 6100 9950 6100
+Wire Notes Line
+	9950 2450 9950 6100
+Text Notes 3100 2500 0    50   ~ 0
+METAL BOX
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 60F7CCA0
+P 1250 4250
+F 0 "J2" V 1096 4298 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 1187 4298 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1250 4250 50  0001 C CNN
+F 3 "~" H 1250 4250 50  0001 C CNN
+	1    1250 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 60F7D602
+P 2100 4550
+F 0 "J5" V 1946 4598 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 2037 4598 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 2100 4550 50  0001 C CNN
+F 3 "~" H 2100 4550 50  0001 C CNN
+	1    2100 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 60F7DC8D
+P 1650 4450
+F 0 "J4" V 1588 4362 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 1497 4362 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 1650 4450 50  0001 C CNN
+F 3 "~" H 1650 4450 50  0001 C CNN
+	1    1650 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 60F9342F
+P 8800 4100
+F 0 "J1" H 8828 4126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4035 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4100 50  0001 C CNN
+F 3 "~" H 8800 4100 50  0001 C CNN
+	1    8800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 60F96667
+P 8500 4400
+F 0 "J3" H 8528 4426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8528 4335 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8500 4400 50  0001 C CNN
+F 3 "~" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 60F96BB1
+P 8800 4700
+F 0 "J10" H 8828 4726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8828 4635 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad" H 8800 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
