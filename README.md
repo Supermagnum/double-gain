@@ -3,7 +3,6 @@ A small PCB that uses two TL082BCP op amps to amplify a signal from a contact mi
 SMD adapter with LT6234 :
 https://aisler.net/p/IXOHRKHO
 https://github.com/Supermagnum/smd-adapter
-
 It has lower self noise.
 
 It has balanced output,input and should run on +48 phantom power.
