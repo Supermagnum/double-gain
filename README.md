@@ -22,6 +22,7 @@ NOTE: R2 in the text that mentions gain is not the one you should change! It's R
 
 Component side picture with resistor values versus dB gain:
 https://github.com/Supermagnum/double-gain/blob/main/components-side.jpg
+NOTE: R2 in the text that mentions gain is not the one you should change! It's R11 and R13!
 
 Reverse side:
 https://github.com/Supermagnum/double-gain/blob/main/back-side.jpg
