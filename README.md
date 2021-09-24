@@ -16,8 +16,9 @@ Of course the PCB board and components must not come in contact with any metal s
 
 The circuit may benefit from a Zobel network, that is a 680 pF capacitor and a 150 ohms resistor in series between pin 2 and 3 on the output or the input connector. It should avoid high frequency oscillation in a long cable.
 
-Schematic diagram:
+Schematic diagram: 
 https://github.com/Supermagnum/double-gain/blob/main/double-gain.pdf
+NOTE: R2 in the text that mentions gain is not the one you should change! It's R11 and R13!
 
 Component side picture with resistor values versus dB gain:
 https://github.com/Supermagnum/double-gain/blob/main/components-side.jpg
